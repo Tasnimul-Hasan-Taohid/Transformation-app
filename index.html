@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-Day Transformation Plan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>6-day transformation plan</h1>
+  <p class="subtitle">Bodyweight · Home · 6 weeks — tap a day to view workout, tap exercise to expand</p>
+
+  <div class="phase-tabs" id="phaseTabs">
+    <button class="ptab active" onclick="setPhase(0)">Week 1–2 · Starter</button>
+    <button class="ptab" onclick="setPhase(1)">Week 3–4 · Build</button>
+    <button class="ptab" onclick="setPhase(2)">Week 5–6 · Push</button>
+  </div>
+
+  <div class="week-grid" id="weekGrid"></div>
+
+  <div class="legend">
+    <div class="leg"><div class="leg-dot" style="background:#1D9E75"></div>Run day</div>
+    <div class="leg"><div class="leg-dot" style="background:#378ADD"></div>Strength day</div>
+    <div class="leg"><div class="leg-dot" style="background:#7F77DD"></div>Combo day</div>
+    <div class="leg"><div class="leg-dot" style="background:#888780"></div>Rest</div>
+  </div>
+
+  <div class="stat-row" id="statRow"></div>
+  <div id="dayDetail"></div>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
